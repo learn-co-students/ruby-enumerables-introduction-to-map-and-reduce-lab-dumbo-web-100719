@@ -1,27 +1,28 @@
-my_array = [1,2,3,4,5]
-
-def map_to_negativize(source_array)\
-neg_num = my_array*-1
-return neg_num
+def map_to_negativize(source_array)
+    source_array.map { |i| i * -1}
 end
 
 def map_to_no_change(source_array)
+    source_array.map {|i| i * 1}
 end
 
 def map_to_double(source_array)
+ source_array.map {|i| i * 2}
+
 end
 
+
 def map_to_square(source_array)
+source_array.map {|i| i * i}
 end
+
 
 def reduce_to_total(source_array, starting_point)
+    source_array.reduce(starting_point) {|sum, n| sum + n}
 end
 
-def map_to_no_change(source_array)
+def reduce_to_all_true(source_array)
 end
 
-def map_to_double(source_array)
-end
-
-def map_to_square(source_array)
+def reduce_to_any_true(source_array)
 end
